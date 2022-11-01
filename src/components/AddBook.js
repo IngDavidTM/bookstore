@@ -1,3 +1,5 @@
+import '../stylesheets/AddBook.css';
+
 const AddBook = () => (
   <form>
     <input type="text" name="name" placeholder="Name" />
