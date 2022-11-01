@@ -1,0 +1,13 @@
+form {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+form input {
+  padding: 10px;
+}
+
+form button {
+  padding: 10px;
+}
