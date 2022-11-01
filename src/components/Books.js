@@ -1,4 +1,5 @@
 import Book from './Book';
+import '../stylesheets/Books.css';
 
 const Books = () => (
   <div className="container">

@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
+import '../stylesheets/Book.css';
 
 const Book = ({ name, author }) => (
-  <div className="Book">
+  <div className="book">
     <h2>{name}</h2>
-    <p>{author}</p>
+    <p>{`Author: ${author}`}</p>
     <button type="button">Remove</button>
   </div>
 );
