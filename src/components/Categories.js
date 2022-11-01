@@ -1,5 +1,5 @@
 const Categories = () => (
-  <div>Hello C</div>
+  <button type="button">Check Status</button>
 );
 
 export default Categories;
