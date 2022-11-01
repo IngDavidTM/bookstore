@@ -1,0 +1,15 @@
+.navbar {
+  background-color: #fff;
+  border-bottom: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+}
+
+.navbar > * {
+  padding: 20px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 10px;
+}
