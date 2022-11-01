@@ -13,7 +13,7 @@ Not available
 - CSS
 - JavaScript
 - React
-- React route DOM
+- React router DOM
 - Webpack
 - Jest
 
