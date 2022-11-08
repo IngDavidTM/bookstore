@@ -1,5 +1,5 @@
 const CHECK_STATUS = 'bookstore/categories/CHECK_STATUS';
-const initialState = [];
+const initialState = '';
 
 export const checkAction = (payload) => ({
   type: CHECK_STATUS,
