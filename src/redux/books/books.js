@@ -1,5 +1,6 @@
 const ADD_BOOK = 'ADD_BOOK';
 const REMOVE_BOOK = 'REMOVE_BOOK';
+const initialState = [];
 
 export const addAction = (payload) => ({
   type: ADD_BOOK,
@@ -11,7 +12,7 @@ export const removeAction = (payload) => ({
   payload,
 });
 
-const booksReducer = (state = [], action) => {
+const booksReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_BOOK:
       return [...state, action.payload];
