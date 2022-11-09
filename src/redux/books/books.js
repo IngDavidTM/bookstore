@@ -24,7 +24,9 @@ export const addAction = (payload) => (dispatch) => {
     },
     body: JSON.stringify(payload),
   })
-    .then(() => dispatch({ type: ADD_BOOK, payload }));
+    .then(
+      () => dispatch({ type: ADD_BOOK, payload }),
+    );
 };
 
 export const removeAction = (payload) => (dispatch) => {
@@ -37,7 +39,9 @@ export const removeAction = (payload) => (dispatch) => {
       item_id: payload,
     }),
   })
-    .then(() => dispatch({ type: REMOVE_BOOK, payload }));
+    .then(
+      () => dispatch({ type: REMOVE_BOOK, payload }),
+    );
 };
 
 const booksReducer = (state = initialState, action) => {
@@ -46,11 +50,11 @@ const booksReducer = (state = initialState, action) => {
     case ADD_BOOK:
       return [...state, action.payload];
     case REMOVE_BOOK:
-      return state.filter((book) => book.id !== action.payload);
+      return state.filter((book) => book.item_id !== action.payload);
     case GET_BOOK:
       Object.keys(action.payload).forEach((element) => {
         const book = action.payload[element][0];
-        book.id = element;
+        book.item_id = element;
         list.push(book);
       });
       return list;
