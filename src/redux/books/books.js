@@ -16,10 +16,17 @@ export const getBook = () => (dispatch) => {
     );
 };
 
-export const addAction = (payload) => ({
-  type: ADD_BOOK,
-  payload,
-});
+export const addAction = (payload) => (dispatch) => {
+  fetch('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/TYpOE5ekIC25miOud97q/books', {
+    method: 'POST',
+    headers: {
+      'Content-type': 'application/json',
+    },
+    body: JSON.stringify(payload),
+  })
+    .then((response) => response.text())
+    .then(() => dispatch({ type: ADD_BOOK, payload }));
+};
 
 export const removeAction = (payload) => ({
   type: REMOVE_BOOK,
