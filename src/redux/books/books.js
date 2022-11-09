@@ -24,14 +24,22 @@ export const addAction = (payload) => (dispatch) => {
     },
     body: JSON.stringify(payload),
   })
-    .then((response) => response.text())
     .then(() => dispatch({ type: ADD_BOOK, payload }));
 };
 
-export const removeAction = (payload) => ({
-  type: REMOVE_BOOK,
-  payload,
-});
+export const removeAction = (payload) => (dispatch) => {
+  fetch(`https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/TYpOE5ekIC25miOud97q/books/${payload}`, {
+    method: 'DELETE',
+    headers: {
+      'Content-type': 'application/json',
+    },
+    body: JSON.stringify({
+      item_id: payload,
+    }),
+  })
+    .then(() => dispatch({ type: REMOVE_BOOK, payload }));
+};
+
 const booksReducer = (state = initialState, action) => {
   const list = [];
   switch (action.type) {
