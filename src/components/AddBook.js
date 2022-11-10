@@ -11,9 +11,10 @@ const AddBook = () => {
   const addBook = (e) => {
     e.preventDefault();
     dispatch(addAction({
-      id: uuidv4(),
-      name,
+      item_id: uuidv4(),
+      title: name,
       author,
+      category: 'book',
     }));
     setName('');
     setAuthor('');
