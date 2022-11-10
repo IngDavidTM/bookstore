@@ -5,7 +5,7 @@
 > I built a webpage using React & Redux where you can add books and matches with [Zeplin project](https://app.zeplin.io/project/5b35a9e13227086040f8eb75/screen/5b695e29bb8c844f118f9378)
 
 ### Live GitHub Page
-Not available
+[Live](https://dainty-froyo-09035f.netlify.app)
 
 ## Built With
 
