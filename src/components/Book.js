@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import '../stylesheets/Book.css';
 import { removeAction } from '../redux/books/books';
 
+const img = require('../images/progress.png');
+
 const Book = ({ id, name, author }) => {
   const dispatch = useDispatch();
   return (
@@ -18,7 +20,7 @@ const Book = ({ id, name, author }) => {
         </ul>
       </div>
       <div className="bookProgress">
-        <img alt="progressBar" />
+        <img src={img} alt="progressBar" />
         <div>
           <h2>80%</h2>
           <p>Completed</p>
