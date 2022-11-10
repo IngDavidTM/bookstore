@@ -13,6 +13,7 @@ const Books = () => {
         ))}
       </div>
       <div className="form">
+        <h2>ADD NEW BOOK</h2>
         <AddBook />
       </div>
     </div>

@@ -1,13 +1,49 @@
-form {
-  width: 100%;
+.form {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #ccc;
+}
+
+.form h2 {
+  width: 85%;
+  margin: 30px 0;
+}
+
+form {
+  width: 85%;
+  display: flex;
+  gap: 20px;
+}
+
+form .name {
+  padding: 10px;
+  flex: 2 1 auto;
+}
+
+form .author {
+  padding: 10px;
+  flex: 1 1 auto;
 }
 
 form input {
-  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+form input:focus {
+  outline: none;
+  border: 1px solid #b4b4b4;
 }
 
 form button {
   padding: 10px;
+  flex: 1 1 auto;
+  background-color: #0494fc;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  opacity: 0.7;
 }
