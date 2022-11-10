@@ -27,7 +27,8 @@
 }
 
 .navbar ul > *:focus {
-  color: #000;
+  color: #363636;
+  font-weight: bolder;
 }
 
 .navbar img {
