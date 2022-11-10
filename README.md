@@ -2,7 +2,7 @@
 
 # BookStore
 
-> I built a webpage where you can add books.
+> I built a webpage using React & Redux where you can add books and matches with [Zeplin project](https://app.zeplin.io/project/5b35a9e13227086040f8eb75/screen/5b695e29bb8c844f118f9378)
 
 ### Live GitHub Page
 Not available
@@ -24,15 +24,17 @@ Not available
 - Download ZIP
 - Unzip the file: bookstore.zip
 - Open index.html with your web browser
+### To clone and run the project locally
+- Copy and run it on your terminal
+```
+$git clone git@github.com:IngDavidTM/bookstore.git
+```
+
 ### Tests
 - `Webhint`
 - `Stylelint`
 - `ESlint`
 - `Lighthouse`
-### Setup
-```
-$git clone git@github.com:IngDavidTM/bookstore.git
-```
 
 ## Authors
 
@@ -59,6 +61,7 @@ Give a ⭐️ if you like this project!
 
 - Hat tip to anyone whose code was used
 - Microverse
+- Thank you [Zeplin](https://app.zeplin.io/project/5b35a9e13227086040f8eb75/screen/5b695e29bb8c844f118f9378)
 
 ## 📝 License
 

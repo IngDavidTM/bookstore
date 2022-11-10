@@ -10,19 +10,21 @@ const AddBook = () => {
   const dispatch = useDispatch();
   const addBook = (e) => {
     e.preventDefault();
-    dispatch(addAction({
-      item_id: uuidv4(),
-      title: name,
-      author,
-      category: 'book',
-    }));
-    setName('');
-    setAuthor('');
+    if (name !== '' && author !== '') {
+      dispatch(addAction({
+        item_id: uuidv4(),
+        title: name,
+        author,
+        category: 'book',
+      }));
+      setName('');
+      setAuthor('');
+    }
   };
   return (
     <form>
-      <input type="text" name="name" onChange={(e) => setName(e.target.value)} placeholder="Name" value={name} />
-      <input type="text" name="author" onChange={(e) => setAuthor(e.target.value)} placeholder="Author" value={author} />
+      <input className="name" type="text" name="name" onChange={(e) => setName(e.target.value)} placeholder="Book title" value={name} />
+      <input className="author" type="text" name="author" onChange={(e) => setAuthor(e.target.value)} placeholder="Author" value={author} />
       <button type="submit" onClick={(e) => addBook(e)}>Add Book</button>
     </form>
   );
