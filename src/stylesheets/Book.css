@@ -1,8 +1,9 @@
 .book {
   background-color: #fff;
+  border: 1px solid #e8e8e8;
   display: flex;
   padding: 20px;
   align-items: center;
-  width: 80%;
+  width: 85%;
   justify-content: space-between;
 }
