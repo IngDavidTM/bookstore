@@ -5,7 +5,7 @@
   padding: 20px;
   align-items: center;
   width: 87%;
-  grid-template-columns: 0.7fr auto auto;
+  grid-template-columns: 1fr 0.8fr 1fr;
 }
 
 .bookInfo ul {
@@ -35,6 +35,7 @@
 .bookProgress {
   display: flex;
   gap: 20px;
+  border-right: 1px solid #e8e8e8;
 }
 
 .bookProgress img {
@@ -45,6 +46,7 @@
   margin-top: 15px;
   padding: 5px 15px;
   background-color: #0494fc;
+  border-radius: 4px;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -52,4 +54,11 @@
 
 .bookChapter button:hover {
   opacity: 0.7;
+}
+
+.bookChapter {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
 }

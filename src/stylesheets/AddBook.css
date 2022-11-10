@@ -40,6 +40,7 @@ form button {
   padding: 10px;
   flex: 1 1 auto;
   background-color: #0494fc;
+  border-radius: 4px;
   color: #fff;
   border: none;
   cursor: pointer;

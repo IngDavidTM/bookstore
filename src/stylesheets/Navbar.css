@@ -24,7 +24,10 @@
 .navbar ul > * {
   text-decoration: none;
   color: #8f8f8f;
-  font-weight: bolder;
+}
+
+.navbar ul > *:focus {
+  color: #000;
 }
 
 .navbar img {
