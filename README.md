@@ -24,15 +24,17 @@ Not available
 - Download ZIP
 - Unzip the file: bookstore.zip
 - Open index.html with your web browser
+### To clone and run the project locally
+- Copy and run it on your terminal
+```
+$git clone git@github.com:IngDavidTM/bookstore.git
+```
+
 ### Tests
 - `Webhint`
 - `Stylelint`
 - `ESlint`
 - `Lighthouse`
-### Setup
-```
-$git clone git@github.com:IngDavidTM/bookstore.git
-```
 
 ## Authors
 
