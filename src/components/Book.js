@@ -5,12 +5,14 @@ import { removeAction } from '../redux/books/books';
 
 const img = require('../images/progress.png');
 
-const Book = ({ id, name, author }) => {
+const Book = ({
+  id, name, author, category,
+}) => {
   const dispatch = useDispatch();
   return (
     <div className="book">
       <div className="bookInfo">
-        <h4>Science Fiction</h4>
+        <h4>{category}</h4>
         <h2>{name}</h2>
         <p>{`Author: ${author}`}</p>
         <ul>
@@ -39,6 +41,7 @@ Book.propTypes = {
   id: PropTypes.node.isRequired,
   name: PropTypes.node.isRequired,
   author: PropTypes.node.isRequired,
+  category: PropTypes.node.isRequired,
 };
 
 export default Book;
